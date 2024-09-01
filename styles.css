@@ -1,0 +1,298 @@
+/* Reset some default styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+  padding-top: 60px;
+}
+
+/* Header and Navigation */
+header {
+  position: fixed;
+  width: 100%;
+  background: #282c34;
+  padding: 10px 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #61dafb;
+}
+
+/* Hero Section */
+.hero-section {
+  background: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ8NDQ0NFREWFhURFRUYHSggGBolGxUVITEhJSkrLi4uFx8zODMsNygtLisBCgoKDQ0NDg0NDy0ZFRkrNy0tKzcrKys3NysrLSstNysrLTc3LSsrNy0rLS0rKy0rLSs3KysrKysrLSsrKysrK//AABEIAKgBLAMBIgACEQEDEQH/xAAZAAADAQEBAAAAAAAAAAAAAAAAAQIDBQf/xAAuEAEBAQEAAAIIAwkBAAAAAAAAARECAxIEBhQhMUFUghYyRCQ0UVJxgZGy0gX/xAAWAQEBAQAAAAAAAAAAAAAAAAAAAQL/xAAVEQEBAAAAAAAAAAAAAAAAAAAAAf/aAAwDAQACEQMRAD8A8iiomKjSKiomKgHFxEXBFRUTFwFRUTFyKKjTlEacguKiYcUXKqVEVKC1SolOURekWiAYIWgLUdU7UWgnpn0rqooqairqKlE1FXU1AoVhgGfURY16Z0GdiK06Z0VNQupARUI4BxUTFwDi4mKgiouIjSAqLiZFxQ4uVEVFFyqlRDgNIrUQ9Bcp6iUaC9OVGloNNK1HmTegVekWlaVoC1Fp2otAWptFpagKmnU1AFRam0C6rO1VRQTUVVTRUkYAYqEYKhwoqAcXExUEVF8pi4C+Vo5UocVCkVIoZkYHDSegrRqdLQXpWp0aB6VqbS0DtK0rU2gdqbRam1AWp0WlagNLSK0DtSCAqiqqaCaR0hU0GAABwDiomLghqiVQFRpGcXAXFxnquao1imcXaoelqRoK0anRoL0tLSBWlpaLQPU0aVqA1NotTagLStKpA7StLStA9Klam0DtLStToKtTaWlaKKNKloGEnoGcIwUcTpwRcVESqlBcVGerlBcVyz1UoNZT1HNFUUWlpUF6EHoKGp0WgrRqNGgrU2lqbQVam0tTagqptK0tA02jU2gdqbRaVAanQVoo0rSAAEAMEAWC0Ao9ToBcq5WUVoi9VzWWq5oNdVGeqlBrzTtRKLQVotTKYHC0FaB6LU6WgrS1OjQVanS0tA9K0rS0D0tFTaA0tFToHaVpDRQQIAQAAAAAABgjAHKkwUadGgaok5QaSrlZSqlEaSq1j5j8wNJVSspVaDTU0vMWgelqdLQVpanS0FaWlpWgrS1Oloq9Klo0CpGVoEQAAAAQMgAAAAADAAEBSA9GkAVp6QA5VSoEoNBqdMFSn5kloNNGolGgvSpaNEGlpUCnpUrS0D0tLQB6NTo0FaRaNAAADBGAIAAAAAAAGBgCkYwCB4MAA8IBgAA4NEFAaNIAeiUgC9Go0Aq0tSAFBUANGjCAyAAwQAwRgYIwAAAEAAAALwwYEAYFgMARYsgTgUQJC7E4BAAARgCBkAAAEDAGVGlQIAAAAAAAGCMAZAAAAAMA0AAAAADAAjAAgABpAAqQAAAACMACMAQAAiAAAAAAEAQAOr6v/wDi9+n+J3xx4nPhzw+PP111ze78cknMzXcnqH4lz9rnv/j6L4n/AEYBP4D8T6qfDf3Xv/H5yvqJ4kue1fzT3ei92e77wAE9RfE+qz4fpO/n9x31E8TZPap77Jvsvef1/P8AAAD/AAL4n1U+f6Xv5fevn1B8Szfa+P7+j9S/7gA//9k=') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 0 20px;
+}
+
+.hero-section h1 {
+  font-size: 4rem;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.hero-section p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  background: #61dafb;
+  color: #282c34;
+  padding: 15px 30px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border-radius: 50px;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background: #21a1f1;
+}
+
+/* Sections */
+section {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  position: relative;
+  display: inline-block;
+  color: #282c34;
+}
+
+section h2::after {
+  content: '';
+  width: 80px;
+  height: 4px;
+  background: #61dafb;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 800px;
+  margin: auto;
+}
+
+.profile-picture {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 768px) {
+  .about-container {
+      flex-direction: row;
+      text-align: left;
+  }
+
+  .profile-picture {
+      margin-right: 20px;
+      margin-bottom: 0;
+  }
+}
+
+/* Skills Section */
+.skills-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+}
+
+.skills-list li {
+  background: #282c34;
+  color: white;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.skills-list li:hover {
+  background: #61dafb;
+  color: #282c34;
+}
+
+/* Projects Section */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.project {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.project h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #282c34;
+}
+
+.project p {
+  margin-bottom: 15px;
+}
+
+.project a {
+  text-decoration: none;
+  color: #61dafb;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.project a:hover {
+  color: #21a1f1;
+}
+
+/* Education Section */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+th {
+  background-color: #282c34;
+  color: white;
+  text-transform: uppercase;
+}
+
+td {
+  text-align: center;
+}
+
+/* Certifications Section */
+#certifications ul {
+  list-style: none;
+  padding: 0;
+  max-width: 800px;
+  margin: auto;
+}
+
+#certifications ul li {
+  background: white;
+  padding: 10px 20px;
+  margin: 10px 0;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 500;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Section */
+#contact ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  max-width: 600px;
+  margin: auto;
+}
+
+#contact ul li {
+  margin-bottom: 10px;
+}
+
+#contact form {
+  margin-top: 30px;
+  max-width: 600px;
+  margin: auto;
+}
+
+#contact input, #contact textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+#contact button {
+  background: #61dafb;
+  color: #282c34;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#contact button:hover {
+  background: #21a1f1;
+}
+
+/* Footer */
+footer {
+  background: #282c34;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
